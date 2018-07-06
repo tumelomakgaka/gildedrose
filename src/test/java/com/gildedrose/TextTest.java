@@ -11,7 +11,7 @@ import static org.junit.Assert.assertThat;
 
 public class TextTest {
     @Test
-    public void preservesBehaviour() throws IOException {
+    public void preservesBehaviour() throws IOException,Exception {
         assertThat(exerciseCode(5), equalTo(a5));
     }
 
@@ -77,7 +77,7 @@ public class TextTest {
             "Conjured Mana Cake, -1, 1\n" +
             "\n";
 
-    private String exerciseCode(int days) throws IOException {
+    private String exerciseCode(int days) throws IOException,Exception {
         Writer printStream = new StringWriter();
         println(printStream, "OMGHAI!");
 
